@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "jsx": "preserve",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "skipLibCheck": true,
+    "noEmit": true,
+    "paths": {
+      "@schemly/core": ["./packages/core/src/index.ts"],
+      "@schemly/runtime": ["./packages/runtime/src/index.ts"],
+      "@schemly/designer": ["./packages/designer/src/index.ts"]
+    }
+  },
+  "include": [
+    "packages/core/src/**/*.ts",
+    "packages/runtime/src/**/*.ts",
+    "packages/runtime/src/**/*.vue",
+    "packages/designer/src/**/*.ts",
+    "packages/designer/src/**/*.vue",
+    "playground/src/**/*.ts",
+    "playground/src/**/*.vue",
+    "env.d.ts"
+  ],
+  "exclude": ["**/dist", "**/node_modules"],
+  "references": [
+    { "path": "./tsconfig.node.json" }
+  ]
+}

@@ -1,0 +1,10 @@
+node_modules
+dist
+.turbo
+*.tsbuildinfo
+.vite
+coverage
+*.local
+.DS_Store
+docs/.vitepress/dist
+docs/.vitepress/cache

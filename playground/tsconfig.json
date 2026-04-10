@@ -1,0 +1,17 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "composite": true,
+    "paths": {
+      "@schemly/core": ["../packages/core/src/index.ts"],
+      "@schemly/runtime": ["../packages/runtime/src/index.ts"],
+      "@schemly/designer": ["../packages/designer/src/index.ts"]
+    }
+  },
+  "include": ["src/**/*.ts", "src/**/*.vue", "*.html"],
+  "references": [
+    { "path": "../packages/core/tsconfig.json" },
+    { "path": "../packages/runtime/tsconfig.json" },
+    { "path": "../packages/designer/tsconfig.json" }
+  ]
+}

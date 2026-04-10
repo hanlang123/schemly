@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "composite": true,
+    "types": ["node"]
+  },
+  "include": [
+    "vite.config.*",
+    "vitest.config.*",
+    "packages/*/vite.config.*",
+    "packages/*/build.config.*",
+    "playground/vite.config.*"
+  ]
+}

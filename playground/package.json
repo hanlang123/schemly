@@ -1,0 +1,19 @@
+{
+  "name": "schemly-playground",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@schemly/core": "workspace:*",
+    "@schemly/runtime": "workspace:*",
+    "@schemly/designer": "workspace:*",
+    "vue": "^3.5.0",
+    "element-plus": "^2.9.0",
+    "pinia": "^2.3.0"
+  }
+}

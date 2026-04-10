@@ -1,0 +1,34 @@
+{
+  "name": "@schemly/runtime",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "./dist/schemly-runtime.umd.cjs",
+  "module": "./dist/schemly-runtime.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/schemly-runtime.js",
+      "require": "./dist/schemly-runtime.umd.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build && vue-tsc --declaration --emitDeclarationOnly --outDir dist",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@schemly/core": "workspace:*",
+    "dayjs": "^1.11.19"
+  },
+  "peerDependencies": {
+    "element-plus": "^2.9.0",
+    "vue": "^3.4.0"
+  },
+  "devDependencies": {
+    "element-plus": "^2.9.0",
+    "vue": "^3.5.0"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "composite": true,
+    "noEmit": false,
+    "paths": {
+      "@schemly/core": ["../core/src/index.ts"]
+    }
+  },
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.vue", "../../env.d.ts"],
+  "references": [
+    { "path": "../core/tsconfig.json" }
+  ]
+}
