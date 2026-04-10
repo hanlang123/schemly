@@ -14,7 +14,7 @@ hero:
       link: /schema/top-level
     - theme: alt
       text: GitHub
-      link: https://github.com/user/schemly
+      link: https://github.com/hanlang123/schemly
 
 features:
   - icon: 🧩
