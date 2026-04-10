@@ -89,7 +89,7 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/user/schemly' },
+      { icon: 'github', link: 'https://github.com/hanlang123/schemly' },
     ],
 
     footer: {
