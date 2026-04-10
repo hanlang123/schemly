@@ -22,6 +22,7 @@ export default defineConfig({
       { text: '高级', link: '/advanced/external-deps', activeMatch: '/advanced/' },
       { text: 'Designer', link: '/designer/', activeMatch: '/designer/' },
       { text: '参考', link: '/reference/typescript', activeMatch: '/reference/' },
+      { text: '关于', link: '/about' },
     ],
 
     sidebar: {
