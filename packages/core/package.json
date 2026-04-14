@@ -1,6 +1,6 @@
 {
   "name": "@schemly/core",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Schema 协议类型定义、校验与工具函数 — Schemly 核心包",
   "type": "module",
   "license": "MIT",

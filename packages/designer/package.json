@@ -1,6 +1,6 @@
 {
   "name": "@schemly/designer",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Schema 可视化编辑器 — Schemly 设计器",
   "type": "module",
   "license": "MIT",

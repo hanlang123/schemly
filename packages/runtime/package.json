@@ -1,6 +1,6 @@
 {
   "name": "@schemly/runtime",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Schema 驱动的 Vue 3 运行时渲染引擎 — Schemly 运行时包",
   "type": "module",
   "license": "MIT",
