@@ -1,19 +1,42 @@
 {
   "name": "@schemly/runtime",
   "version": "0.1.0",
+  "description": "Schema 驱动的 Vue 3 运行时渲染引擎 — Schemly 运行时包",
   "type": "module",
+  "license": "MIT",
+  "author": "Schemly Team",
+  "homepage": "https://hanlang123.github.io/schemly/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hanlang123/schemly.git",
+    "directory": "packages/runtime"
+  },
+  "bugs": {
+    "url": "https://github.com/hanlang123/schemly/issues"
+  },
+  "keywords": [
+    "schema",
+    "vue3",
+    "element-plus",
+    "renderer",
+    "data-table",
+    "form",
+    "descriptions",
+    "typescript"
+  ],
   "main": "./dist/schemly-runtime.umd.cjs",
   "module": "./dist/schemly-runtime.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "import": "./dist/schemly-runtime.js",
-      "require": "./dist/schemly-runtime.umd.cjs",
-      "types": "./dist/index.d.ts"
+      "require": "./dist/schemly-runtime.umd.cjs"
     }
   },
   "files": [
-    "dist"
+    "dist",
+    "LICENSE"
   ],
   "scripts": {
     "build": "vite build && vue-tsc --declaration --emitDeclarationOnly --outDir dist",

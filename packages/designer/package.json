@@ -1,18 +1,40 @@
 {
   "name": "@schemly/designer",
   "version": "0.1.0",
+  "description": "Schema 可视化编辑器 — Schemly 设计器",
   "type": "module",
+  "license": "MIT",
+  "author": "Schemly Team",
+  "homepage": "https://hanlang123.github.io/schemly/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hanlang123/schemly.git",
+    "directory": "packages/designer"
+  },
+  "bugs": {
+    "url": "https://github.com/hanlang123/schemly/issues"
+  },
+  "keywords": [
+    "schema",
+    "vue3",
+    "element-plus",
+    "designer",
+    "visual-editor",
+    "low-code",
+    "typescript"
+  ],
   "main": "./dist/schemly-designer.umd.cjs",
   "module": "./dist/schemly-designer.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "import": "./dist/schemly-designer.js",
-      "require": "./dist/schemly-designer.umd.cjs",
-      "types": "./dist/index.d.ts"
-    }
+      "require": "./dist/schemly-designer.umd.cjs"
+    },
+    "./style.css": "./dist/schemly-designer.css"
   },
-  "files": ["dist"],
+  "files": ["dist", "LICENSE"],
   "scripts": {
     "build": "vite build && vue-tsc --declaration --emitDeclarationOnly --outDir dist",
     "test": "vitest run"
