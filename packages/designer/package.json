@@ -34,7 +34,7 @@
     },
     "./style.css": "./dist/schemly-designer.css"
   },
-  "files": ["dist", "LICENSE"],
+  "files": ["dist", "LICENSE", "README.md"],
   "scripts": {
     "build": "vite build && vue-tsc --declaration --emitDeclarationOnly --outDir dist",
     "test": "vitest run"
